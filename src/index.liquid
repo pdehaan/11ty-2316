@@ -1,0 +1,10 @@
+---
+title: HOME PAGE
+---
+
+<section>
+{%- for item in collections.items %}
+  <h3>{{ item.data.title }}</h3>
+  <div>{{ item.templateContent }}</div>
+{%- endfor %}
+</section>
